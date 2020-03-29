@@ -35,7 +35,6 @@ p{
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
     padding: 50px;
-    
 }
 .card{
     border-top: solid;
@@ -86,4 +85,32 @@ p{
     grid-column: 2;
     grid-row: 3 / 5;
 
+}
+@media only screen and (max-width: 660px) {
+    .cards{
+        margin: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .card1{
+        border-color: #00c8c8;
+        grid-column:1;
+        grid-row: 1;
+    }
+    .card2{
+        border-color: red;
+        grid-column:1;
+        grid-row: 2;
+    }
+    .card3{
+        border-color: #549ef2;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .card4{
+        border-color: orange;
+        grid-column: 1;
+        grid-row:4;
+    
+    }
 }
